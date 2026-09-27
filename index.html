@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>ふるさと納税の手順書</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=BIZ+UDPGothic:wght@400;700&family=Zen+Maru+Gothic:wght@500;700&display=swap">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="wrap">
+<header>
+  <h1>ふるさと納税の手順書</h1>
+  <p class="lead">ふるなびアプリと「ふるなびマネー」を使って寄付し、ワンストップ特例で手続きを終えるまでの流れです。上から順番に進めて、終わったらチェックを入れてください。</p>
+  <div class="deadline">
+    <span class="chip warn">目安：9月30日（水）までに寄付</span>
+    <span class="chip">寄付の最終期限：12月31日</span>
+  </div>
+</header>
+
+<section>
+  <h2>なぜ9月30日までなのか</h2>
+  <div class="box">
+    <p>10月1日から、返礼品（お礼の品）のルールが厳しくなります。今と同じ返礼品が選べなくなったり、同じ品でも寄付額が上がったりする可能性があるため、欲しい品がある場合は9月中の寄付がおすすめです。</p>
+    <p style="margin-top:8px">税金が戻ってくる仕組み（自己負担2,000円）や、ワンストップ特例の手続きは10月以降も変わりません。</p>
+  </div>
+</section>
+
+<section>
+  <h2>用意するもの</h2>
+  <div class="box">
+    <ul class="plain">
+      <li>スマートフォン</li>
+      <li>昨年の<strong>源泉徴収票</strong>（年金の方は「公的年金等の源泉徴収票」）</li>
+      <li><strong>マイナンバーカード</strong>（ワンストップ特例の申請で使います）</li>
+      <li>ふるなびマネーのチャージに使う支払い方法（<strong>寄付する本人名義</strong>のもの）</li>
+    </ul>
+  </div>
+</section>
+
+<section>
+  <h2>手順</h2>
+  <ol class="steps">
+    <li class="step" id="s1">
+      <div class="num">1</div>
+      <div class="body">
+        <label><input type="checkbox" id="c1"><h3>キャンペーンにエントリーする</h3></label>
+        <p>事前エントリーしてからチャージすると、ふるなびマネーが<strong>500円分</strong>もらえます。下のページを開いてエントリーしてください。</p>
+        <div class="code-row">
+          <span class="small">招待コード</span>
+          <span class="code" id="refcode">8Jh67R0I</span>
+          <button type="button" id="copybtn">コピー</button>
+        </div>
+        <a class="btn primary" href="https://app.furunavi.jp/Webview?url=https%3A%2F%2Ffurunavi.jp%2Fc%2Fcp_money_referral202605%3FreferralCode%3D8Jh67R0I%23referralEntryReferree" target="_blank" rel="noopener">エントリーページを開く</a>
+        <p class="note"><strong>順番に注意：</strong>エントリーは必ずチャージ（手順4）より<strong>前</strong>に済ませてください。キャンペーン期間は2027年1月31日（日）23:59までです。</p>
+      </div>
+    </li>
+
+    <li class="step" id="s2">
+      <div class="num">2</div>
+      <div class="body">
+        <label><input type="checkbox" id="c2"><h3>ふるなびアプリを入れる</h3></label>
+        <p>App Store または Google Play で「ふるなび」を検索してインストールし、会員登録（ログイン）します。</p>
+        <p class="small">氏名・住所は、マイナンバーカードに書かれている内容と<strong>一字一句同じ</strong>に登録してください。後の手続きで照合されます。</p>
+      </div>
+    </li>
+
+    <li class="step" id="s3">
+      <div class="num">3</div>
+      <div class="body">
+        <label><input type="checkbox" id="c3"><h3>いくらまで寄付できるか調べる</h3></label>
+        <p>ふるなびの「控除上限額シミュレーション」で、自己負担2,000円で済む寄付の上限を調べます。できるだけ詳しい入力画面（詳細シミュレーション）を使ってください。</p>
+        <dl>
+          <dt>入力のもと</dt><dd>昨年の源泉徴収票の「支払金額」「社会保険料等の金額」など</dd>
+          <dt>基準の年</dt><dd>上限は<strong>今年1〜12月の収入</strong>で決まります。昨年と収入が変わりそうなら、今年の見込みで入力します</dd>
+          <dt>寄付する額</dt><dd>結果の<strong>8〜9割程度</strong>にとどめると安心です</dd>
+        </dl>
+        <p class="note"><strong>上限を超えた分は</strong>税金が戻らず、ただの寄付（自己負担）になります。迷ったら少なめに。</p>
+      </div>
+    </li>
+
+    <li class="step" id="s4">
+      <div class="num">4</div>
+      <div class="body">
+        <label><input type="checkbox" id="c4"><h3>ふるなびマネーにチャージする</h3></label>
+        <p>アプリからふるなびマネーにチャージします。金額は、手順3で決めた寄付予定額にします。</p>
+        <p class="small">チャージに使うカードや口座は、<strong>寄付する本人の名義</strong>のものにしてください。家族名義で払うと、控除が受けられない場合があります。</p>
+      </div>
+    </li>
+
+    <li class="step" id="s5">
+      <div class="num">5</div>
+      <div class="body">
+        <label><input type="checkbox" id="c5"><h3>返礼品を選んで寄付する</h3></label>
+        <p>アプリで返礼品を選び、支払い方法で「ふるなびマネー」を選んで寄付します。操作は、一緒に共有した YouTube の解説動画を見ながら進めてください。</p>
+        <p>申込画面の「税額控除申請に必要な書類送付について」では、次を選びます。</p>
+        <p class="pick">不要（ワンストップオンライン）</p>
+        <p class="small">書類が郵送されない代わりに、スマホで申請できます（手順6）。寄付先がオンライン申請に対応していない場合は「必要」を選び、届いた申請書を郵送します。</p>
+      </div>
+    </li>
+
+    <li class="step" id="s6">
+      <div class="num">6</div>
+      <div class="body">
+        <label><input type="checkbox" id="c6"><h3>ワンストップ特例を申請する</h3></label>
+        <p>確定申告をしなくても税金が戻る手続きです。<strong>寄付をした自治体ごとに</strong>申請します。</p>
+        <div class="mail">
+          <p class="mail-label">寄付のあとに届くメールの例</p>
+          <p>寄付が終わると、自治体から「ワンストップ申請オンラインサービス対象自治体です」といったメールが届きます。メール内の<strong>オンライン申請のリンク</strong>を開き、案内されるアプリ（例：「IAM（アイアム）」）とマイナンバーカードで申請します。</p>
+          <p class="small">申請できるのは、寄付の翌営業日の夕方以降です。返礼品とは別に、寄付の確認メールや書類も届きます。</p>
+        </div>
+        <p class="note"><strong>メールが届いたら、必ず年内に申請</strong>しておきましょう。</p>
+        <dl>
+          <dt>回数の上限</dt><dd>1年で<strong>5自治体まで</strong>（同じ自治体に何回寄付しても1つと数えます）</dd>
+          <dt>申請方法</dt><dd>メールのリンクからオンライン申請。対応していない自治体は、届いた申請書を郵送</dd>
+          <dt>期限</dt><dd>オンラインは年内が目安。郵送の場合は<strong>2027年1月10日 必着</strong></dd>
+        </dl>
+        <p class="note"><strong>確定申告をする場合は使えません。</strong>医療費控除などで確定申告をすると、ワンストップ特例は無効になります。その場合は確定申告の中で寄付分もあわせて申告してください。</p>
+      </div>
+    </li>
+  </ol>
+</section>
+
+<section>
+  <h2>困ったときは</h2>
+  <div class="box">
+    <ul class="plain">
+      <li>寄付のあとに引っ越しや氏名の変更があったら、寄付先の自治体に変更届を出します。</li>
+      <li>自治体から届く「寄附金受領証明書」は、確定申告をすることになった場合に使うので保管しておきます。</li>
+      <li>わからないところは、ふるなびアプリ内のヘルプか、寄付先の自治体に問い合わせてください。</li>
+    </ul>
+  </div>
+</section>
+
+<footer>2026年9月時点の情報をもとに作成しています。キャンペーンの条件や返礼品は変わることがあるため、申込時にアプリの画面でも確認してください。</footer>
+</div>
+
+<script>
+(function(){
+  var ids=["1","2","3","4","5","6"];
+  function load(k){try{return localStorage.getItem(k)}catch(e){return null}}
+  function save(k,v){try{localStorage.setItem(k,v)}catch(e){}}
+  ids.forEach(function(i){
+    var cb=document.getElementById("c"+i), li=document.getElementById("s"+i);
+    if(load("furu-c"+i)==="1"){cb.checked=true; li.classList.add("done");}
+    cb.addEventListener("change",function(){
+      li.classList.toggle("done",cb.checked);
+      save("furu-c"+i,cb.checked?"1":"0");
+    });
+  });
+  var btn=document.getElementById("copybtn"), code=document.getElementById("refcode");
+  btn.addEventListener("click",function(){
+    function sel(){var r=document.createRange(); r.selectNodeContents(code); var s=getSelection(); s.removeAllRanges(); s.addRange(r); btn.textContent="選択しました";}
+    if(navigator.clipboard&&navigator.clipboard.writeText){
+      navigator.clipboard.writeText(code.textContent).then(function(){btn.textContent="コピーしました"},sel);
+    }else{sel();}
+    setTimeout(function(){btn.textContent="コピー"},2000);
+  });
+})();
+</script>
+
+</body>
+</html>
